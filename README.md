@@ -74,7 +74,6 @@
 
 ### 4.3 Ejemplo de pipeline (GitHub Actions en YAML)
 
-```yaml
 name: CI Pipeline
 
 on:
@@ -86,7 +85,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
 
 ### Explicación:
 
