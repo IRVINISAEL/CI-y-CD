@@ -74,7 +74,6 @@
 
 ### 4.3 Ejemplo de pipeline (GitHub Actions en YAML)
 
-```yaml
 name: CI Pipeline
 
 on:
@@ -86,9 +85,38 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Configurar Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-      - run: npm install
-      - run: npm test
+
+
+### Explicación:
+
+- Se activa cuando se hace push a main.
+
+- Instala dependencias y ejecuta pruebas automáticas.
+
+### 4.4 Beneficios
+
+- Detección temprana de errores.
+
+- Mayor confianza en el código.
+
+- Entregas rápidas y seguras.
+
+### 5. Selección personal de patrones
+
+- **Creacional: Factory Method → Para crear objetos de diferentes tipos de usuarios en el sistema.
+
+- **Estructural: Facade → Para ofrecer una API simple a funciones complejas del backend.
+
+- **Comportamiento: Observer → Para manejar notificaciones de eventos (ej. nuevas actividades).
+
+- **Emergente: MVC → Para mantener clara la separación entre lógica, interfaz y controladores.
+
+### Integración en el sistema
+
+- **Factory Method: Creación de instancias de usuarios (administrador, visitante).
+
+- **Facade: Unificar servicios de base de datos y envío de correos en una sola interfaz.
+
+- **Observer: Implementar notificaciones automáticas cuando se agregue una nueva cita o actividad.
+
+- **MVC: Organizar el sistema en capas claras para escalabilidad.
