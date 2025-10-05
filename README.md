@@ -74,6 +74,7 @@
 
 ### 4.3 Ejemplo de pipeline (GitHub Actions en YAML)
 
+```yaml
 name: CI Pipeline
 
 on:
