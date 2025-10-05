@@ -102,20 +102,20 @@ jobs:
 
 ### 5. Selección personal de patrones
 
-- **Creacional: Factory Method → Para crear objetos de diferentes tipos de usuarios en el sistema.
+- **Creacional:** Factory Method → Para crear objetos de diferentes tipos de usuarios en el sistema.
 
-- **Estructural: Facade → Para ofrecer una API simple a funciones complejas del backend.
+- **Estructural:** Facade → Para ofrecer una API simple a funciones complejas del backend.
 
-- **Comportamiento: Observer → Para manejar notificaciones de eventos (ej. nuevas actividades).
+- **Comportamiento:** Observer → Para manejar notificaciones de eventos (ej. nuevas actividades).
 
-- **Emergente: MVC → Para mantener clara la separación entre lógica, interfaz y controladores.
+- **Emergente:** MVC → Para mantener clara la separación entre lógica, interfaz y controladores.
 
 ### Integración en el sistema
 
-- **Factory Method: Creación de instancias de usuarios (administrador, visitante).
+- **Factory Method:** Creación de instancias de usuarios (administrador, visitante).
 
-- **Facade: Unificar servicios de base de datos y envío de correos en una sola interfaz.
+- **Facade:** Unificar servicios de base de datos y envío de correos en una sola interfaz.
 
-- **Observer: Implementar notificaciones automáticas cuando se agregue una nueva cita o actividad.
+- **Observer:** Implementar notificaciones automáticas cuando se agregue una nueva cita o actividad.
 
-- **MVC: Organizar el sistema en capas claras para escalabilidad.
+- **MVC:** Organizar el sistema en capas claras para escalabilidad.
