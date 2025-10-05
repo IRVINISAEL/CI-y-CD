@@ -99,6 +99,8 @@ jobs:
 - Mayor confianza en el código.
 
 - Entregas rápidas y seguras.
+  
+---
 
 ### 5. Selección personal de patrones
 
