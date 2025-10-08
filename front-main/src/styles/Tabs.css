@@ -1,0 +1,77 @@
+/* src/styles/Tabs.css */
+.tabs-container {
+  background: white;
+  position: relative;
+}
+
+.tabs-header {
+  display: flex;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: 0 3rem;
+  border-bottom: 2px solid #e5e7eb;
+  position: relative;
+}
+
+.tabs-header::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tabs-container:hover .tabs-header::after {
+  opacity: 1;
+}
+
+.tab {
+  padding: 1.5rem 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.3s ease;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+
+.tab::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: var(--primary-gradient);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.tab.active {
+  color: var(--primary-dark);
+  background: white;
+}
+
+.tab.active::before {
+  width: 100%;
+}
+
+.tab:hover:not(.active) {
+  color: #374151;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.tab-content {
+  padding: 3rem;
+  background: white;
+  min-height: 500px;
+  animation: fadeInUp 0.5s ease-out;
+}
